@@ -1,0 +1,70 @@
+.mission .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-block .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: top center;
+    grid-gap: 2rem;
+}
+
+.content-block:last-child .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.block-1 {
+    background-image: url("../assets/images/backgrounds/blur-left.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.block-2 {
+    background: url("../assets/images/backgrounds/blur-right.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.content-block ul {
+    margin-left: 0;
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+.content-block li {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .content-block .container {
+        grid-template-columns: auto;
+    }
+
+    .block-1,
+    .block-2 {
+        background: none;
+    }
+
+    .block-2 .img-container {
+        order: 1;
+    }
+
+    .block-2 .text-container {
+        order: 2;
+    }
+
+    .content-block ul {
+        padding-left: 1.5rem;
+    }
+
+    .content-block h2 {
+        line-height: 1.5;
+    }
+}

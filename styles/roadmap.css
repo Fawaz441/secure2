@@ -1,0 +1,175 @@
+.roadmap-wrapper {
+    background: url("../assets/svgs/roadmap.bg.svg");
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-size: 60%;
+}
+
+.roadmap .container {
+    width: 92%;
+    margin-left: 8%;
+    margin-top: 3rem;
+}
+
+.roadmap {
+    position: relative;
+}
+
+.roadmap .bubble1 {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+
+    animation: move 0.8s linear infinite alternate;
+}
+
+.roadmap .bubble2 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    z-index: 8;
+    animation: move 0.8s linear infinite alternate;
+}
+
+.roadmap h2,
+.roadmap .container>p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #b1b0b3;
+}
+
+.form-wrapper {
+    background-image: url("../assets/svgs/form-bg.svg");
+    background-position-x: 95%;
+    background-repeat: no-repeat;
+}
+
+.form {
+    background: #302e36;
+    border-radius: 0.8rem;
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.form::before {
+    content: "";
+    position: absolute;
+    padding: 2px;
+    border-radius: inherit;
+    z-index: -1;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background: linear-gradient(146.87deg, #5f36ff 3.58%, #08ff42 88.73%);
+}
+
+.form h3,
+.form p {
+    text-align: center;
+    margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+    .roadmap .container {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    .roadmap-wrapper .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.stages-carousel {
+    position: relative;
+    padding-top: 2rem;
+    margin-top: 6rem;
+}
+
+.stages-carousel::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    border-radius: 0.8rem;
+    left: 4vw;
+    background: #1e1c25;
+    min-height: 300px;
+    width: 80vw;
+}
+
+.owl-item>div {
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    margin-right: 4%;
+    margin-bottom: 3rem;
+    transition: margin 0.4s ease;
+}
+
+.owl-item>div:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.owl-item.center>div {
+    cursor: auto;
+    margin-right: 4%;
+    margin-bottom: 0;
+    /*  margin: 0; */
+}
+
+.owl-item:not(.center)>div:hover {
+    opacity: 0.9;
+}
+
+.stage h3 {
+    line-height: 1.5;
+}
+
+.stage {
+    padding: 4rem 2rem;
+    border-radius: 0.4rem;
+    background: linear-gradient(146.87deg, #5f36ff 3.58%, #08ff42 88.73%);
+    border: 1px solid #08ff42;
+    box-shadow: 40px 25px 100px rgba(0, 99, 23, 0.5);
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.stage:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.owl-carousel .owl-item {
+    float: left;
+}
+
+@media (max-width: 600px) {
+    .owl-carousel .owl-item {
+        float: none;
+    }
+
+    .owl-item>div {
+        margin-right: 4%;
+        margin-bottom: 1rem;
+    }
+
+    .stages-carousel {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .stages-carousel::before {
+        background: none;
+    }
+}

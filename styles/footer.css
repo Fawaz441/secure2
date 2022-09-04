@@ -1,0 +1,158 @@
+.footer {
+    background: #1e1c25;
+    z-index: 2;
+}
+
+.footer .logo {
+    width: 70%;
+}
+
+.footer h4 {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    color: #08ff42;
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 25% auto 35%;
+    grid-gap: 3rem;
+}
+
+.footer-content ul {
+    padding-left: 0;
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.links nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe p,
+.social-text {
+    color: #08ff42;
+    font-size: 0.875em;
+    margin-bottom: 0.8rem;
+}
+
+.input-container {
+    position: relative;
+    background: #0f0d16;
+    border-radius: 0.4rem;
+}
+
+.input-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.input-container input {
+    padding: 1.2rem 1rem;
+    background: #0f0d16;
+    color: #fff;
+    border-radius: inherit;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.footer-bottom {
+    border-top: 2px solid #c4c4c4;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.locale-switcher {
+    display: flex;
+}
+
+.locale-switcher select {
+    background: none;
+    color: inherit;
+    border: none;
+}
+
+.locale-switcher select:focus,
+.locale-switcher select:active {
+    outline: none;
+    border: none;
+}
+
+.locale-switcher img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.footer .socials {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .footer-content {
+        grid-template-columns: auto auto auto;
+        grid-gap: 3rem;
+    }
+
+    .footer .subscribe {
+        grid-column: span 3;
+        width: 80%;
+    }
+
+    .footer .socials {
+        display: block;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: auto;
+        grid-gap: 3rem;
+    }
+
+    .input-container {
+        background: none;
+    }
+
+    .input-container input {
+        margin-bottom: 0.8rem;
+        width: 100%;
+    }
+
+    .input-container button {
+        position: static;
+    }
+
+    .footer-bottom {
+        padding: 2.5rem 0 6rem;
+        flex-direction: column-reverse;
+    }
+
+    .footer .socials {
+        display: block;
+        padding-bottom: 1rem;
+    }
+
+    .footer .subscribe {
+        grid-column: span 1;
+        width: 80%;
+    }
+}
