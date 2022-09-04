@@ -24,8 +24,8 @@ const SeenOn = () => {
     <section className="seen-on md:mb-20 mt-16">
       <div className="container mx-auto">
         <h3 className="text-xl">As seen on</h3>
-        <div className="brands md:mt-16">
-          <div>
+        <div className="brands mt-5 md:mt-16">
+          <div className="mb-5 space-x-3 flex">
             <Image src={alphr} alt="alphr" />
             <Image src={coincheckup} alt="Coin checkup" />
             <Image
@@ -39,7 +39,7 @@ const SeenOn = () => {
               className="hidden md:block"
             />
           </div>
-          <div>
+          <div className="mb-5 space-x-3 flex">
             <Image src={beInCrypto} alt="be in Crypto" />
             <Image src={coinMarketBag} alt="Coin Market Bag" />
             <Image
@@ -49,7 +49,7 @@ const SeenOn = () => {
             />
             <Image src={benziga} alt="Benziga" />
           </div>
-          <div>
+          <div className="mb-5 space-x-3 flex">
             <Image src={coincodex} alt="coin codex" />
             <Image src={economicTimes} alt="economic times" />
             <Image src={cryptoNews} alt="crypto News" />
@@ -59,7 +59,7 @@ const SeenOn = () => {
               className="hidden md:block"
             />
           </div>
-          <div>
+          <div className="mb-5 space-x-3 flex">
             <Image src={newsBTC} alt="newsBTC" />
             <Image src={bitCoinNews} alt="bitCoinNews" />
             <Image src={jerusalemPost} alt="jerusalemPost" />
@@ -70,7 +70,7 @@ const SeenOn = () => {
             />
           </div>
 
-          <div>
+          <div className="mb-5 space-x-3 flex">
             <Image src={coinTelegraph} alt="coinTelegraph" />
             <Image src={theGuardian} alt="theGuardian" />
             <Image src={analyticInsight} alt="Analytic Insight" />

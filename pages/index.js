@@ -41,7 +41,7 @@ const Home = () => {
                 Aspiring to be the most comprehensive and secure cloud service
                 package available.
               </p>
-              <div className="btn-container">
+              <div className="btn-container space-y-2 md:space-y-0">
                 <Link href="/">
                   <div className="btn md:my-6 md:ml-4 rounded-md presale-btn flex items-center space-x-1 cursor-pointer">
                     <span className="ico mb-[-4px]"></span>
